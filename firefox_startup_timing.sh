@@ -25,11 +25,15 @@ mv $XPIDIR $EXTDIR
 
 #Quietly flush pagechace, dentries and inodes, to simulate a cold start
 sudo sync && sudo sysctl -q -w vm.drop_caches=3
+#Make sure generic system/desktop libs which are normally loaded are in the cache
+gcalctool -s "42" >/dev/null
 
 #Cold start
 firefox 2>/dev/null
+
 #Warm start 1
 firefox 2>/dev/null
+
 #Warm start 2
 firefox 2>/dev/null
 
