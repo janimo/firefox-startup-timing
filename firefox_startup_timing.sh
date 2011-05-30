@@ -23,7 +23,7 @@ rm -f $LOGFILE
 cp user.js $PROFILEDIR
 
 #Install extension
-mv $XPIDIR $EXTDIR
+cp -a $XPIDIR $EXTDIR
 
 #Quietly flush pagechace, dentries and inodes, to simulate a cold start
 sudo sync && sudo sysctl -q -w vm.drop_caches=3
@@ -40,7 +40,7 @@ firefox 2>/dev/null
 firefox 2>/dev/null
 
 #Remove extension
-mv $EXTDIR/$XPIDIR .
+rm -Rf $EXTDIR/$XPIDIR
 
 #Output the timing measurements
 cat $LOGFILE
