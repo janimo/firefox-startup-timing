@@ -33,10 +33,7 @@ gcalctool -s "42" >/dev/null
 #Cold start
 firefox 2>/dev/null
 
-#Warm start 1
-firefox 2>/dev/null
-
-#Warm start 2
+#Warm start
 firefox 2>/dev/null
 
 #Remove extension
