@@ -9,7 +9,7 @@ mkdir -p $EXTDIR
 XPIDIR=aboutstartup@glandium.org.xpi
 
 #Default profile directory
-PROFILEDIR=/home/jani/.mozilla/firefox/*.default/
+PROFILEDIR=~/.mozilla/firefox/*.default/
 
 #Logfile created by the extension
 LOGFILE=$PROFILEDIR/startup.log
