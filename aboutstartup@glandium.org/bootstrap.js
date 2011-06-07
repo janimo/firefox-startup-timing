@@ -37,7 +37,7 @@ const AboutStartupFactory = XPCOMUtils.generateNSGetFactory([AboutStartup])(Abou
 
 function quitApplication() {
 
-   if (Services.prefs.getBoolPref('extensions.aboutstartup.autoQuit')) {
+   if (true) {
         var appStartup = Components.classes['@mozilla.org/toolkit/app-startup;1'].
                       getService(Ci.nsIAppStartup);
         appStartup.quit(Ci.nsIAppStartup.eAttemptQuit);
