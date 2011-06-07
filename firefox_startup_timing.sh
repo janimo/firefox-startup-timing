@@ -6,7 +6,7 @@ EXTDIR=~/.mozilla/extensions/\{ec8030f7-c20a-464f-9b0e-13a3a9e97384\}/
 mkdir -p $EXTDIR
 
 #"About:startup" extension location
-XPIDIR=aboutstartup@glandium.org.xpi
+XPIDIR=aboutstartup@glandium.org
 
 #Default profile directory
 PROFILEDIR=~/.mozilla/firefox/*.default/
