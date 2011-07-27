@@ -8,6 +8,10 @@ mkdir -p $EXTDIR
 #"About:startup" extension location
 XPIDIR=aboutstartup@glandium.org
 
+firefox &
+sleep 20
+pkill -9 firefox-bin 2>/dev/null
+
 #Default profile directory
 PROFILEDIR=~/.mozilla/firefox/*.default/
 
